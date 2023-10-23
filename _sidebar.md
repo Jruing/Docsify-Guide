@@ -12,3 +12,8 @@
   * Prometheus相关
     * [安装部署](/docs/Prometheus笔记-安装.md)
     * [Label标签](/docs/Prometheus笔记-Label标签.md)
+    * [file_sd_config](/docs/Prometheus笔记-file_sd_config.md)
+    * [配置文件字段解析](/docs/Prometheus笔记-配置文件字段解析.md)
+    * [Node_exporter部署](/docs/Prometheus笔记-安装Node_exporter.md)
+    * [Grafana部署](/docs/Prometheus笔记-Grafana可视化.md)
+    * [监控Docker](/docs/Prometheus笔记-监控docker容器.md)
