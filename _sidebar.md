@@ -17,3 +17,6 @@
     * [Node_exporter部署](/docs/Prometheus笔记-安装Node_exporter.md)
     * [Grafana部署](/docs/Prometheus笔记-Grafana可视化.md)
     * [监控Docker](/docs/Prometheus笔记-监控docker容器.md)
+    * [协议接口监控](/docs/Prometheus笔记-安装blackbox_exporter.md)
+    * [basicAuth认证](/docs/Prometheus笔记-设置Basic_auth登录校验.md)
+    * [告警规则](/docs/Prometheus笔记-告警规则配置.md)
