@@ -20,3 +20,6 @@
     * [协议接口监控](/docs/Prometheus笔记-安装blackbox_exporter.md)
     * [basicAuth认证](/docs/Prometheus笔记-设置Basic_auth登录校验.md)
     * [告警规则](/docs/Prometheus笔记-告警规则配置.md)
+
+  * Kubernets相关
+    * [安装](/docs/Kubernetes学习笔记-安装.md)
