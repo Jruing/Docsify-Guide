@@ -4,11 +4,13 @@
   * Django笔记
     * [Fnproject示例](/docs/ServerLess学习笔记-搭建FN示例.md)
     * [Fnproject示例](/docs/ServerLess学习笔记-搭建FN示例.md)
+  
 * Linux相关笔记
   * Serverless相关
     * [Fnproject搭建](/docs/ServerLess学习笔记-Fnproject搭建.md)
     * [Fnproject常用命令](/docs/ServerLess学习笔记-Fnproject常用命令.md)
     * [Fnproject示例](/docs/ServerLess学习笔记-搭建FN示例.md)
+    
   * Prometheus相关
     * [安装部署](/docs/Prometheus笔记-安装.md)
     * [Label标签](/docs/Prometheus笔记-Label标签.md)
@@ -20,6 +22,14 @@
     * [协议接口监控](/docs/Prometheus笔记-安装blackbox_exporter.md)
     * [basicAuth认证](/docs/Prometheus笔记-设置Basic_auth登录校验.md)
     * [告警规则](/docs/Prometheus笔记-告警规则配置.md)
-
-  * Kubernets相关
+  
+  * Kubernetes相关
     * [安装](/docs/Kubernetes学习笔记-安装.md)
+    
+  * MongoDB相关
+  
+    -    [安装](/docs/Centos 7 安装Mongodb社区版.md)
+  
+        
+  
+        
