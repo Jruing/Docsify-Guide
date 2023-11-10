@@ -28,4 +28,4 @@
     
   * MongoDB相关
   
-    * [安装](/docs/Centos 7 安装Mongodb社区版.md)
+    * [安装](/docs/Centos7安装Mongodb社区版.md)
