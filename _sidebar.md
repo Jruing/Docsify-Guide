@@ -29,3 +29,7 @@
   * MongoDB相关
   
     * [安装](/docs/Centos7安装Mongodb社区版.md)
+    
+  * Redis相关
+    
+    * [集群安装](/docs/Redis7.X Centos集群搭建.md)
