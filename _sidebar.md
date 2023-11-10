@@ -32,4 +32,4 @@
     
   * Redis相关
     
-    * [集群安装](/docs/Redis7.X Centos集群搭建.md)
+    * [集群安装](/docs/Redis7.XCentos集群搭建.md)
