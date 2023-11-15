@@ -1,3 +1,5 @@
+> 安装高版本Redis需要先安装Python3.x
+
 ## 下载
 
 https://download.redis.io/redis-stable.tar.gz
@@ -14,20 +16,22 @@ https://download.redis.io/redis-stable.tar.gz
 
    ```sh
    cd redis-stable
-   
-   make && make install
+   # 如果make出现异常，可以尝试make MALLOC=libc
+   make 
+   # 将redis安装到/usr/local/redis-stable目录下
+   make PREFIX=/usr/local/redis-stable install
    ```
 
 3. 创建6个节点的目录
 
    ```
    # 创建日志目录
-   mkdir /usr/local/redis-cluster/{6379,6380,6381,6382,6383,6384}/log
+   mkdir -p /usr/local/redis-cluster/{6379,6380,6381,6382,6383,6384}/log
    # 创建配置文件目录
-   mkdir /usr/local/redis-cluster/{6379,6380,6381,6382,6383,6384}/config
+   mkdir -p /usr/local/redis-cluster/{6379,6380,6381,6382,6383,6384}/config
    ```
 
-4. 写入配置文件
+4. 写入配置文件(写入配置的时候请务必去掉注释)
 
    ```sh
    # 6379节点配置文件
@@ -67,19 +71,30 @@ https://download.redis.io/redis-stable.tar.gz
    # 6381,6382,6383,6384配置文件参考上面的
    ```
 
-5. 创建集群
+5. 分别启动redis
+
+   ```
+   redis-server /usr/local/redis-cluster/6379/config/redis.conf
+   redis-server /usr/local/redis-cluster/6380/config/redis.conf
+   redis-server /usr/local/redis-cluster/6381/config/redis.conf
+   redis-server /usr/local/redis-cluster/6382/config/redis.conf
+   redis-server /usr/local/redis-cluster/6383/config/redis.conf
+   redis-server /usr/local/redis-cluster/6387/config/redis.conf
+   ```
+
+6. 创建集群
 
    ```
    redis-cli -a "test-cluster" --cluster create 192.168.137.10:6379 192.168.137.10:6380 192.168.137.10:6381 192.168.137.10:6382 192.168.137.10:6383 192.168.137.10:6384 --cluster-replicas 1
    ```
 
-6. 验证集群
+7. 验证集群
 
    ```
    redis-cli -h 192.168.137.10 -c -p 6380 -a "test-cluster"
    ```
 
-7. 集群查看相关命令
+8. 集群查看相关命令
 
    ```
    1.集群状态

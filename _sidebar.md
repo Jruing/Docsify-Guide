@@ -2,7 +2,7 @@
 
 * Python相关笔记
   * Python相关
-      * [安装Python](/doc/Centos7编译安装Python.md)
+      * [安装Python](/docs/Centos7编译安装Python.md)
 * Linux相关笔记
   * Serverless相关
     * [Fnproject搭建](/docs/ServerLess学习笔记-Fnproject搭建.md)
