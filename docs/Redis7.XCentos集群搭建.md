@@ -40,11 +40,12 @@ https://download.redis.io/redis-stable.tar.gz
    bind 0.0.0.0
    port 6379 # 服务监听端口
    daemonize yes # 后台启动
-   dir /usr/local/redis-cluster/6379/
    pidfile /usr/local/redis-cluster/6379/redis_6379.pid
    masterauth test-cluster # 启动 redis 密码验证，主要是针对 master 对应的 slave 节点设置的，在 slave 节点数据同步的时候用到
    requirepass test-cluster # redis密码，#启动 redis 密码验证，一定要 requirepass 和 masterauth 同时设置。对登录权限做限制，redis每个节点的requirepass可以是独立、不同的，但建议和 masterauth 设置成一样
-   appendonly yes # 启用守护进程
+   appendonly yes # 开启持久化
+   dir /usr/local/redis-cluster/6379/ # AOF文件存放目录
+   appendfilename "appendonly.aof" #AOF文件名称（默认）
    cluster-enabled yes # 启用集群
    cluster-config-file "nodes.conf" # 关联集群的配置文件
    cluster-node-timeout 5000 # 集群超时时间
@@ -57,11 +58,12 @@ https://download.redis.io/redis-stable.tar.gz
    bind 0.0.0.0
    port 6380
    daemonize yes
-   dir /usr/local/redis-cluster/6380/
    pidfile /usr/local/redis-cluster/6380/redis_6380.pid
    masterauth test-cluster
    requirepass test-cluster 
    appendonly yes
+   dir /usr/local/redis-cluster/6380/
+   appendfilename "appendonly.aof" 
    cluster-enabled yes
    cluster-config-file "nodes.conf"
    cluster-node-timeout 5000
