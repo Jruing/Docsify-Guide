@@ -149,4 +149,21 @@
     
     ```
 
+    ## 重置Mongodb 管理员密码
+    
+    > 注意：需要停止mongodb的服务
+    
+    ```
+    # 采用不需要授权的方式启动mongodb
+    ./mongod --noauth --dbpath /path/to/data/directory
+    # 进入mongodb服务
+    mongosh
+    # 进入admin数据库
+    use admin 
+    # 修改用户名密码
+    db.update("root",{"pwd":"新密码"})
+    # 使用原来的方式启动mongodb
+    ./mongod -f mongodb.conf  --fork
+    ```
+    
     
