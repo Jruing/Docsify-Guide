@@ -11,7 +11,6 @@
     * [Fnproject搭建](/docs/ServerLess学习笔记-Fnproject搭建.md)
     * [Fnproject常用命令](/docs/ServerLess学习笔记-Fnproject常用命令.md)
     * [Fnproject示例](/docs/ServerLess学习笔记-搭建FN示例.md)
-    
   * Prometheus相关
     * [安装部署](/docs/Prometheus笔记-安装.md)
     * [Label标签](/docs/Prometheus笔记-Label标签.md)
@@ -23,14 +22,11 @@
     * [协议接口监控](/docs/Prometheus笔记-安装blackbox_exporter.md)
     * [basicAuth认证](/docs/Prometheus笔记-设置Basic_auth登录校验.md)
     * [告警规则](/docs/Prometheus笔记-告警规则配置.md)
-  
   * Kubernetes相关
     * [安装](/docs/Kubernetes学习笔记-安装.md)
-    
   * MongoDB相关
-  
     * [安装](/docs/Centos7安装Mongodb社区版.md)
-    
   * Redis相关
-    
     * [集群安装](/docs/Redis7.XCentos集群搭建.md)
+  * 容器相关
+    * [docker-compose安装](/docs/Docker-Compose安装.md)
